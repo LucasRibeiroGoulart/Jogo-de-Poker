@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Poker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="player-hand">
+            <h2>Sua Mão</h2>
+            <div class="card" id="player-card-1"></div>
+            <div class="card" id="player-card-2"></div>
+            <button onclick="continueGame()">Continuar</button>
+            <button onclick="endGame()">Desistir</button>
+        </div>
+
+        <div class="opponent-hand" id="opponent-hand" style="display: none;">
+            <h2>Mão do Adversário</h2>
+            <div class="card" id="opponent-card-1"></div>
+            <div class="card" id="opponent-card-2"></div>
+        </div>
+
+        <button onclick="restartGame()" id="restart-button" style="display: none;">Recomeçar</button>
+    </div>
+
+<div class="table-cards">
+    <h2>Mesa</h2>
+    <div class="card" id="table-card-1"></div>
+    <div class="card" id="table-card-2"></div>
+    <div class="card" id="table-card-3"></div>
+    <div class="card" id="table-card-4"></div>
+    <div class="card" id="table-card-5"></div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
